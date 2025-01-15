@@ -34,7 +34,7 @@
 梯度下降法的基本思想可以类比为一个下山的过程。
 假设这样一个场景：一个人被困在山上，需要从山上下来(找到山的最低点，也就是山谷)。但此时山上的浓雾很大，导致可视度很低；因此，下山的路径就无法确定，必须利用自己周围的信息一步一步地找到下山的路。这个时候，便可利用梯度下降算法来帮助自己下山。怎么做呢，首先以他当前的所处的位置为基准，寻找这个位置最陡峭的地方，然后朝着下降方向走一步，然后又继续以当前位置为基准，再找最陡峭的地方，再走直到最后到达最低处；同理上山也是如此，只是这时候就变成梯度上升算法了
 
-![alt text](Optimization/image.png)
+![alt text](image.png)
 
 #### 梯度下降
 
@@ -54,18 +54,18 @@
 
 1.单变量的微分，函数只有一个变量时
 
-![alt text](Optimization/image-1.png)
+![alt text](image-1.png)
 
 2.多变量的微分，当函数有多个变量的时候，即分别对每个变量进行求微分
 
-![alt text](Optimization/image-2.png)
+![alt text](image-2.png)
 
 ##### 梯度
 
 梯度实际上就是多变量微分的一般化。
 下面这个例子：
 
-![alt text](Optimization/image-3.png)
+![alt text](image-3.png)
 
 我们可以看到，梯度就是分别对每个变量进行微分，然后用逗号分割开，梯度是用<>包括起来，说明梯度其实一个向量。
 
@@ -80,11 +80,11 @@
 
 首先给出数学公式：
 
-![alt text](Optimization/image-4.png)
+![alt text](image-4.png)
 
 此公式的意义是：J是关于Θ的一个函数，我们当前所处的位置为Θ0点，要从这个点走到J的最小值点，也就是山底。首先我们先确定前进的方向，也就是梯度的反向，然后走一段距离的步长，也就是α，走完这个段步长，就到达了Θ1这个点！
 
-![alt text](Optimization/image-5.png)
+![alt text](image-5.png)
 
 #####  α
 
@@ -104,6 +104,6 @@
 
 举一个具体的例子（利用gpt）：
 
-![alt text](Optimization/image-6.png)
+![alt text](image-6.png)
 
-![alt text](Optimization/image-7.png)
+![alt text](image-7.png)
