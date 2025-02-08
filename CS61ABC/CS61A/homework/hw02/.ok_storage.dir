@@ -1,0 +1,5 @@
+'count_until_larger-correct', (0, 70)
+'filter_sequence-correct', (512, 70)
+'hailstone-correct', (1024, 70)
+'product-correct', (1536, 70)
+'accumulate-correct', (2048, 70)
