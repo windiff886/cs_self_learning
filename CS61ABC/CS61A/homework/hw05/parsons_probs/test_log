@@ -1,0 +1,38 @@
+=====================================================================
+Assignment: Homework 5
+OK, version v1.18.1
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Doctests for flatten_link
+
+>>> link = Link(1, Link(2, Link(3, Link(4))))
+>>> flatten_link(link)
+Traceback (most recent call last):
+  File "C:\Users\14357\Downloads\hw05\parsons_probs\flatten_link.py", line 17, in flatten_link
+    return flatten_link(lnk.first) + flatten_link(lnk.rest)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14357\Downloads\hw05\parsons_probs\flatten_link.py", line 15, in flatten_link
+    if isinstance(lnk.first, Link):
+                  ^^^^^^^^^
+AttributeError: 'int' object has no attribute 'first'
+
+# Error: expected
+#     [1, 2, 3, 4]
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     AttributeError: 'int' object has no attribute 'first'
+
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Backup... 0.0% completeBackup... 100% complete
+[31mBackup past deadline by 1069 days, 3 hours, 2 minutes, and 18 seconds[0m
+[32mBackup successful for user: windiff886@gmail.com[0m
+[32mURL: https://okpy.org/cal/cs61a/sp22/hw05/backups/Oq7nWp[0m
+
